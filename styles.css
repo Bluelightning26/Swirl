@@ -1,0 +1,77 @@
+
+
+*
+{background-color: #FDE09D;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        color: #5D5031;
+}
+
+.preahvihear-regular {
+    font-family: "Preahvihear", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*
+Navbar code based from: dhyans.xyz -(modified)
+*/
+.navbar {
+    background-color: #B875FF;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    position : sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: "Preahvihear", sans-serif;
+    font-weight: 700;
+}
+
+.navbar__container{
+    background-color: #B875FF;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 5000px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.navbar__menu{
+    background-color: #B875FF;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__item {
+    background-color: #B875FF;
+    height: 80px;
+}
+
+.navbar__links{
+    background-color: #B875FF;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 20px;
+    height: 100%;
+}
+
+.navbar__btn {
+    background-color: #B875FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+}
