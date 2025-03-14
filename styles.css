@@ -1,8 +1,6 @@
 
 
-*
-{
-    background-color: #FDE09D;
+* {
     box-sizing: border-box;
     color: #5D5031;
     margin: 0;
@@ -10,6 +8,12 @@
     font-family: "Preahvihear", sans-serif;
     font-weight: 400;
 }
+
+h, h1, h2, h3, h4, h5, h6, p, p2, li, footer {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 
 .preahvihear-regular {
     font-family: "Preahvihear", sans-serif;
@@ -78,7 +82,8 @@ Navbar code based from: dhyans.xyz -(modified)
 }
 
 .navbar__btn {
-    background-color: #B875FF;
+    background-color: lightskyblue;
+    border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,10 +93,30 @@ Navbar code based from: dhyans.xyz -(modified)
     width: 100%;
 }
 
-h, h1, h2, h3, h4, h5, h6, p, footer {
-padding-left: 50px;
-padding-right: 50px;
+.navbar__links:hover {
+    color: yellow;
 }
+
+.navbar__btn:hover {
+    color: black;
+}
+
+#circle {
+    height: 550px;
+    width: 800px;
+    background-color: #B875FF;
+    border-radius: 50%;
+    position: sticky;
+    margin-top: -250px;
+}
+div.rotate {
+    transform: rotate(-25deg);
+    margin-top: 20px;
+    margin-left: 245px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
 
 h1{
     font-size: 50px;
@@ -102,11 +127,22 @@ h2{
 }
 
 h3{
-    font-size: 30px;
+    font-size: 25px;
 }
 
-p {
+button{
     font-size: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+p{
+    font-size: 20px;
+}
+
+p2{
+    font-size: 21px;
 }
 
 footer{
@@ -116,6 +152,4 @@ footer{
     align-items: center;
     display: flex;
     width: 100%;
-    position: absolute;
-    bottom: 0;
 }
