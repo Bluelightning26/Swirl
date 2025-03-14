@@ -1,4 +1,4 @@
-
+console.log('Happy developing ✨')
 document.getElementById("announcement-banner").addEventListener("mouseenter", function() {
     var additionalInfo = document.getElementById("additional-info");
     additionalInfo.style.display = "block";
