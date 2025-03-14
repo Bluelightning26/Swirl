@@ -103,10 +103,11 @@ Navbar code based from: dhyans.xyz -(modified)
 
 /* Banner Code From Boba Drops And/Or Hack Club Brand Website */
 .banner {
-    position: absolute;
-    top: -10px;
-    left: var(--spacing-4);
+    top: -20px;
+    left: 10px;
+    z-index: 1001;
 }
+
 
 .banner img {
     height: 80px;
@@ -115,7 +116,6 @@ Navbar code based from: dhyans.xyz -(modified)
 .banner:hover img {
     animation: wave-flag 0.5s linear infinite alternate;
 }
-
 
 @media (prefers-reduced-motion: reduce) {
     .banner:hover img {
@@ -148,6 +148,7 @@ div.rotate {
     margin-left: 245px;
     font-size: 45px;
     font-weight: bold;
+    color: white;
 }
 
 
@@ -176,6 +177,40 @@ p{
 
 p2{
     font-size: 21px;
+}
+
+/*LISTS ARE VERY BROKEN ATM */
+list.req {
+    margin-left: 200px;
+    list-style-type: decimal;
+    color: #B875FF;
+}
+
+div.list {
+    margin-left: 50px;
+}
+
+div.list_indent {
+    margin-left: 60px;
+}
+
+img.swirl-req-img {
+    float: right;
+    width: 250px;
+    height: 500px;
+    transform: none;
+    position: relative;
+    top: -100px;
+    margin-right: 400px;
+    margin-bottom: -100px;
+
+}
+
+hr{
+    border-color: sandybrown;
+    border-radius: 20px;
+    border-style: dotted;
+    border-width: 10px;"
 }
 
 footer{
