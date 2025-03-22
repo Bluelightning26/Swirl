@@ -144,7 +144,7 @@ Navbar code based from: dhyans.xyz -(modified)
     background-color: #B875FF;
     border-radius: 50%;
     position: sticky;
-    margin-top: -270px;
+    margin-top: -300px;
 }
 div.rotate {
     transform: rotate(-25deg);
