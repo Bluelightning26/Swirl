@@ -236,8 +236,14 @@ hr{
     position: sticky;
 }
 
+a:hover{
+    color: black;
+    transition-duration: 0.75s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.675);
+}
+
 .sprinkles__img{
-    opacity: 70%;
+    opacity: 65%;
 }
 .sprinkles__img:hover{
     opacity: 1;
