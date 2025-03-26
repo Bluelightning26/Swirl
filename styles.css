@@ -194,6 +194,8 @@ p2{
 }
 
 /*LISTS ARE VERY BROKEN ATM */
+
+
 list.req {
     margin-left: 200px;
     list-style-type: decimal;
@@ -202,6 +204,7 @@ list.req {
 
 div.list {
     margin-left: 50px;
+    font-size: 18px;
 }
 
 div.list_indent {
