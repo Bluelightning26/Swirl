@@ -1,4 +1,8 @@
 /* swirl background */
+*{
+    z-index: 10;
+}
+
 #circle_sub {
     height: 400px;
     width: 500px;
