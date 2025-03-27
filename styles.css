@@ -1,4 +1,4 @@
-
+/* Website designed by @blu on the Hack Club Slack */
 
 * {
     box-sizing: border-box;
@@ -193,7 +193,7 @@ p2{
     font-size: 21px;
 }
 
-/*LISTS ARE VERY BROKEN ATM */
+/* make lists prettier!! */
 
 
 list.req {
