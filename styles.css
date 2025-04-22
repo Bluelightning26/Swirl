@@ -268,3 +268,30 @@ footer{
     color: rgb(255, 255, 255);
 }
 
+/* Adapted from w3schools */
+.collapsible {
+    margin-left: 30px;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 25px;
+    background-color: transparent;
+}
+.collapsible:hover {
+    font-size: 25px;
+    background-color: transparent;
+    color: black;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+
+

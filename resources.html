@@ -150,10 +150,7 @@
     <h2>faq</h2><br>
 
     <h3>How many club meetings should this take?</h3><br>
-    <p>Two are recommended to introduce the project, present the slides, let the members work and submit their website.<br>
-        A third meeting where everyone presents their project and eats ice cream can also be pretty fun!<br>
-        Join <a target="_blank" href="https://hackclub.slack.com/archives/C02PA5G01ND">#leaders</a> on the Hack Club Slack and ask other leaders what they did, and get advice!
-    </p>
+
         <br>
     <h3>Is this only for high schoolers?</h3><br>
     <p>Yup, Hack Club focuses towards giving teenagers the resources to be creative. All people completing this workshop
@@ -163,9 +160,32 @@
     <p>Nope, this is a part two! You are allowed to expand on your Boba Drops submission as a result. If you choose not to,
     the submission website has to have been created recently.</p>
 
+<button class="faq">How many Club Meetings Should this take?</button>
+<div class="faqAnswer">
+    <p>Two are recommended to introduce the project, present the slides, let the members work and submit their website.<br>
+        A third meeting where everyone presents their project and eats ice cream can also be pretty fun!<br>
+        Join <a target="_blank" href="https://hackclub.slack.com/archives/C02PA5G01ND">#leaders</a> on the Hack Club Slack and ask other leaders what they did, and get advice!
+    </p>
+</div>
 
 
+<!-- Adapted from W3Schools-->
+<script>
+    var a = document.getElementsByClassName("faq");
+    var i;
+    for (i = 0; i < a.length; i++) {
+        a[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var faqAnswer = this.nextElementSibling;
 
+            if (faqAnswer.style.display === "block")
+                {faqAnswer.style.display = "none";}
+            else
+                {faqAnswer.style.display = "block";}
+        });
+    }
+</script>
+<!-- End of JS -->
 
 
 <center>
