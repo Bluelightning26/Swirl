@@ -10,8 +10,8 @@
 }
 
 h, h1, h2, h3, h4, h5, h6, p, p2, li, footer {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
 }
 
 
@@ -28,44 +28,43 @@ Navbar code based from: dhyans.xyz -(modified)
     padding: 0;
     margin: 0;
     background-color: #B875FF;
-    height: 80px;
+    height: 5em;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
-    position : sticky;
+    font-size: 1em;
+    position: sticky;
     top: 0;
     z-index: 1000;
     font-family: "Preahvihear", sans-serif;
     font-weight: 700;
 }
 
-.navbar__container{
+.navbar__container {
     background-color: #B875FF;
     display: flex;
-    justify-content: space-between;
-    height: 80px;
+    justify-content: flex-end;
+    height: 5em;
     z-index: 1;
     width: 100%;
-    max-width: 5000px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 0 600px;
+    padding: 0 5%;
 }
 
-.navbar__menu{
+.navbar__menu {
     padding: 0;
     background-color: #B875FF;
     display: flex;
     align-items: center;
     list-style: none;
     text-align: center;
-    margin: 0;
 }
 
 .navbar__item {
     padding: 0;
     background-color: #B875FF;
-    height: 80px;
+    height: 5em;
     margin: 0;
 }
 
@@ -76,20 +75,20 @@ Navbar code based from: dhyans.xyz -(modified)
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    padding: 0 20px;
+    padding: 0 1.25em;
     height: 100%;
 
 }
 
 .navbar__btn {
     background-color: lightskyblue;
-    border-radius: 15px;
+    border-radius: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     text-decoration: none;
-    padding: 0 20px;
+    padding: 0 1.25em;
     width: 100%;
 }
 
@@ -260,7 +259,7 @@ footer{
     align-items: center;
     display: flex;
     width: 100%;
-    position: absolute;
+    position: relative;
 }
 
 ::selection {
