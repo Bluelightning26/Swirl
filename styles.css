@@ -254,6 +254,7 @@ hr{
     display: inline-block;
     margin-left: 100px;
     position: sticky;
+    overflow: clip;
 }
 
 a:hover{
@@ -264,6 +265,7 @@ a:hover{
 
 .sprinkles__img{
     opacity: 65%;
+
 }
 .sprinkles__img:hover{
     opacity: 1;
@@ -308,25 +310,27 @@ footer{
     .banner img{
         width: 1em;
     }
+
     #circle {
-        height: 6em;
-        width: 8em;
+        height: 18rem;
+        width: 25rem;
     }
 
     #swirl-logo {
         width: 10rem;
         height: 10rem;
-        margin-top: 2rem;
+        margin-top: 1rem;
         margin-bottom: -4rem;
     }
     div.rotate {
         margin-left: 3rem;
         font-size: 1rem;
-        padding-left: 1rem;
+        padding-left: 2rem;
     }
 
     h1 {
         font-size: 3rem;
     }
+
 
 }
