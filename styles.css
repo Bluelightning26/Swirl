@@ -85,7 +85,6 @@ Navbar code based from: dhyans.xyz -(modified)
     text-decoration: none;
     padding: 0 1.5rem;
     height: 100%;
-
 }
 
 .navbar__btn {
@@ -254,7 +253,7 @@ hr{
     display: inline-block;
     margin-left: 100px;
     position: sticky;
-    overflow: clip;
+    overflow: hidden;
 }
 
 a:hover{
@@ -265,8 +264,8 @@ a:hover{
 
 .sprinkles__img{
     opacity: 65%;
-
 }
+
 .sprinkles__img:hover{
     opacity: 1;
 }
@@ -297,10 +296,25 @@ footer{
 
 
 /* Mobile Media Queries Resizing*/
+
+
 @media (max-width: 700px) {
     .navbar {
         height: 3em;
         font-size: 1em;
+    }
+
+    .navbar__links {
+        display: none;
+        flex-direction: column;
+        background-color: var(--navbar-bg);
+        width: 100%;
+        text-align: center;
+        padding: 1em 0;
+    }
+
+    .navbar__links.active {
+        display: flex;
     }
 
     .navbar__links .navbar__btn{
@@ -332,5 +346,5 @@ footer{
         font-size: 3rem;
     }
 
-
+    
 }
