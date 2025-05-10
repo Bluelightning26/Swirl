@@ -62,10 +62,35 @@ div.rotate_sub {
     color: white;
 }
 
+iframe {
+    width: 60%;
+}
+
 div.rotate_sub:hover {
     color: #5D5031;
     transition-duration: 0.5s;
 }
 
+@media (max-width: 700px) {
+
+    #circle2_sub {
+        height: 12rem;
+        width: 15rem;
+        padding-left: -5rem;
+        margin-bottom: -1rem;
+        margin-top: -11rem;
+        margin-right: 5rem;
+        background-color: transparent;
+
+    }
+
+    #swirlText {
+        z-index: 999999;
+    }
+
+    iframe {
+        width: 95%;
+    }
+}
 
 
