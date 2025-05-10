@@ -2,31 +2,39 @@
 *{
     z-index: 10;
 }
-
+#circle {
+    height: 38rem;
+    width: 55rem;
+    background-color:var(--navbar-bg);
+    border-radius: 50%;
+    position: sticky;
+    margin-top: -18.75rem;
+}
 #circle_sub {
-    height: 400px;
-    width: 500px;
+    height: 25rem;
+    width: 31rem;
     background-color: #B875FF;
     border-radius: 50%;
     position: sticky;
    float: right;
-    margin-top: -300px;
-    margin-right: -5px;
+    margin-top: -12rem;
+    margin-right: -1rem;
     justify-content: center;
     justify-items: center;
     justify-self: center;
     text-align: center;
+    overflow: clip;
 }
 
 #circle2_sub {
-    height: 200px;
-    width: 300px;
+    height: 12.5rem;
+    width: 25rem;
     background-color: #B875FF;
     border-radius: 50%;
     position: sticky;
     float: right;
-    margin-top: -200px;
-    margin-right: -105px;
+    margin-top: -5rem;
+    margin-right: -4rem;
     justify-content: center;
     justify-items: center;
     justify-self: center;
