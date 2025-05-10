@@ -246,14 +246,7 @@ hr{
 }
 
 .sprinkle{
-    height: 15px;
-    width: 25px;
-    background-color: #25C7E0;
-    border-radius: 50%;
-    display: inline-block;
-    margin-left: 100px;
-    position: sticky;
-    overflow: hidden;
+
 }
 
 a:hover{
@@ -264,6 +257,13 @@ a:hover{
 
 .sprinkles__img{
     opacity: 65%;
+    height: 5rem;
+    width: 2rem;
+    background-color: #25C7E0;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+    overflow: hidden
 }
 
 .sprinkles__img:hover{
@@ -346,5 +346,5 @@ footer{
         font-size: 3rem;
     }
 
-    
+
 }
