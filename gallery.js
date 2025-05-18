@@ -13,18 +13,17 @@ fetch('data.yaml')
             const demoUrl = fields['Playable URL'] || '#';
             const sourceUrl = fields['Code URL'] || '#';
             // Screenshot can be a string or an array, handle both
-            const FALLBACK_IMAGE = 'images/assets/png/sprinkles_goof.png';
-            let screenshot = FALLBACK_IMAGE;
+            let screenshot = '';
             if (fields['Screenshot']) {
                 if (Array.isArray(fields['Screenshot'])) {
-                    if (fields['Screenshot'][0]) {
-                        screenshot = fields['Screenshot'][0].url || fields['Screenshot'][0];
-                    }
+                    screenshot = fields['Screenshot'][0].url || fields['Screenshot'][0];
                 } else if (typeof fields['Screenshot'] === 'object' && fields['Screenshot'].url) {
                     screenshot = fields['Screenshot'].url;
-                } else if (typeof fields['Screenshot'] === 'string') {
+                } else {
                     screenshot = fields['Screenshot'];
                 }
+            } else {
+                screenshot = 'images/assets/png/sprinkles_goof.png'; // fallback image
             }
 
             const item = document.createElement('div');
