@@ -323,6 +323,9 @@ footer{
     .gallery-item a:hover {
         transform: none;
         transition: none;
+    }
+
+    .gallery-item button:hover {
         background-color: #E0C3FF;
     }
 
