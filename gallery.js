@@ -1,4 +1,5 @@
-const FALLBACK_IMAGE = '/images/assets/png/sprinkles_goof.png';
+const IMAGE_HOST = 'https://yourdomain.com';
+const FALLBACK_IMAGE = IMAGE_HOST + '/images/assets/png/sprinkles_goof.png';
 
 fetch('data.yaml')
     .then(response => response.text())
@@ -25,13 +26,12 @@ fetch('data.yaml')
                     screenshot = fields['Screenshot'];
                 }
             }
-            // Make screenshot path root-relative if not absolute
+            // Prepend IMAGE_HOST if not absolute
             if (
                 screenshot &&
-                !/^https?:\/\//.test(screenshot) &&
-                !screenshot.startsWith('/')
+                !/^https?:\/\//.test(screenshot)
             ) {
-                screenshot = '/' + screenshot;
+                screenshot = IMAGE_HOST + (screenshot.startsWith('/') ? '' : '/') + screenshot;
             }
 
             const item = document.createElement('div');
