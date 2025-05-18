@@ -9,7 +9,7 @@ fetch('data.yaml')
 
         data.records.forEach(record => {
             const fields = record.fields;
-            const title = fields['GitHub Username'] || 'Untitled Project';
+            const ghUser = fields['GitHub Username'] || 'Untitled Project';
             const demoUrl = fields['Playable URL'] || '#';
             const sourceUrl = fields['Code URL'] || '#';
 
@@ -25,15 +25,19 @@ fetch('data.yaml')
                     screenshot = fields['Screenshot'];
                 }
             }
-            // Ensure screenshot path is root-relative if not absolute
-            if (screenshot && !/^https?:\/\//.test(screenshot) && !screenshot.startsWith('/')) {
+            // Make screenshot path root-relative if not absolute
+            if (
+                screenshot &&
+                !/^https?:\/\//.test(screenshot) &&
+                !screenshot.startsWith('/')
+            ) {
                 screenshot = '/' + screenshot;
             }
 
             const item = document.createElement('div');
             item.className = 'gallery-item';
             item.innerHTML = `
-                <h2 style="font-size: 100%">${title}</h2>
+                <h2 style="font-size: 100%">${ghUser}</h2>
                 <img src="${screenshot}" alt="Screenshot" style="width: 10rem; height: 10rem; border-radius: 20%; margin-top: 1rem; margin-bottom: 1rem;">
                 <br>
                 <a href="${demoUrl}" target="_blank"><button style="padding: 1rem;">Demo</button></a>
