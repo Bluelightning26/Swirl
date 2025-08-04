@@ -17,6 +17,43 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Preahvihear&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+<style>
+  .req-grid {
+    margin: auto;
+    max-width: 1000px;
+    font-size: 1.2em;
+    text-align: center;
+    display: grid;
+    row-gap: 1em;
+    column-gap: 2em;
+    grid-template-areas:
+    "req-a req-b req-c"
+    "img-a img-b img-c"
+    "space space space"
+    "req-d req-e req-f"
+    "img-d img-e img-f"
+    "space2 space2 space2"
+    "req-g req-h req-i"
+    "img-g img-h img-i";
+    padding: 1rem;
+  }
+  .req-grid img {
+    height: 100px;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .space {
+    grid-area: space;
+    padding: 1rem;
+  }
+  .space2 {
+    grid-area: space;
+    padding: 1rem;
+  }
+</style>
+
 </head>
 
 <body style="
@@ -87,27 +124,51 @@
 <h2 style="margin-left: 20px">Your website must...</h2>
 
 <br>
-<div class="list">
-<img src="images/assets/svg/swirl-2.svg" alt="Sprinkles" class="swirl-req-img">
-<li>Be original (No copy pasting from ANYWHERE)</li>
-<li>Have 3 HTML pages with content</li>
-<li>Have a Favicon & Title</li>
-<li>Meet all requirements from Boba Drops (on the submission website!)</li>
-<div class = "list_indent">
-  <li>You’re a high schooler</li>
-  <li>This website was made recently</li>
-  <li>Your website is static (uses HTML + CSS)</li>
-  <li>Your website has text, color and a image</li>
-  <li>You haven't gotten a Swirl grant before</li>
-</div>
-<li>Have something fun & unique!</li>
-<li>Have at least one scoop…</li>
+
+  <div class="req-grid">
+
+    <div class="req-a">Be original<br>(No copy-pasting)</div>
+    <div class="req-b">Have 3 HTML pages with content</div>
+    <div class="req-c">Have a Favicon & Title</div>
+
+    <div class="img-a"><img src="https://stickers.dld.hackclub.app/static/stickers/Rummage.png" alt="rummaging from dld sticker site!"></div>
+    <div class="img-b"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png" alt="html logo""></div>
+    <div class="img-c"><img src="/images/assets/png/sprinkles.png" alt="favicon" style="border-radius: 20px"></div>
+
+    <div class="space"></div>
+    <div class="space"></div>
+    <div class="space"></div>
+
+    <div class="req-d">Have something fun & unique!</div>
+    <div class="req-e">Be static<br>(Only contains HTML + CSS)<br>JavaScript is optional</div>
+    <div class="req-f">Have text, color, and an image</div>
+
+    <div class="img-d"><img src="/images/assets/png/sprinkles_goof.png" alt="orpheus funny" style="border-radius: 20px"></div>
+    <div class="img-e"><img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/6cd2cb8be1757872cc6e070ee4929e0ddbd677ec_colored-logo.png" alt="static website gh pages loo"></div>
+    <div class="img-f"><img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/8dff1160390935198b7558c4088bb57a7d6cc5c7_Cascade.png" alt="artistic orph"></div>
+
+    <div class="space2"></div>
+    <div class="space2"></div>
+    <div class="space2"></div>
+
+    <div class="req-g"></div>
+    <div class="req-h">Have at least one scoop...</div>
+    <div class="req-i"></div>
+    <div class="img-g"></div>
+    <div class="img-h"><img src="images/assets/svg/swirl-2.svg" alt="Sprinkles"></div>
+
 </div>
 
 <br>
-<br>
+<br><br>
+  <br><br>
+  <br>
+
 <p> Other ground rules around submissions:</p>
 <div class="list">
+  <li>You haven't gotten a Swirl grant before</li>
+  <li>You’re a high schooler</li>
+  <li>This website was made recently</li>
   <li>No Ai is permitted in any way (includes content).</li>
   <li>JavaScript is allowed so long as it is not the focal point of the website. (ex. games website)</li>
   <li>If your website was submitted for Boba Drops, it has been expanded on since.</li>

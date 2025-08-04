@@ -199,7 +199,8 @@ button{
 button:hover {
     background-color: #fad4c5;
     font-size: 21px;
-
+    transform: scale(1.1);
+    transition: transform 0.4s ease;
 }
 
 p{
