@@ -5,11 +5,12 @@
     --background: #FDE09D;
     --text-n-footer: #5D5031;
     --button-text: #C289FF;
+    --box-hover: #FFC289;
 }
 
 * {
     box-sizing: border-box;
-    color: #5D5031;
+    color: var(--text-n-footer);
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
@@ -197,7 +198,7 @@ button{
 }
 
 button:hover {
-    background-color: #fad4c5;
+    background-color: var(--box-hover);
     font-size: 21px;
     transform: scale(1.1);
     transition: transform 0.4s ease;
@@ -207,8 +208,11 @@ p{
     font-size: 20px;
 }
 
-p2{
+div.inspiration{
     font-size: 21px;
+}
+
+div.inspiration a {
 }
 
 /* make lists prettier!! */
@@ -261,7 +265,7 @@ a:hover{
     opacity: 65%;
     height: 5rem;
     width: 2rem;
-    background-color: #25C7E0;
+    background-color: var(--box-hover);
     border-radius: 50%;
     position: absolute;
     z-index: 10;
@@ -289,6 +293,10 @@ footer{
     display: flex;
     width: 100%;
     position: relative;
+}
+
+footer a {
+    color: #ffffff;
 }
 
 ::selection {
@@ -328,7 +336,7 @@ footer{
     }
 
     .gallery-item button:hover {
-        background-color: #E0C3FF;
+        background-color: var(--box-hover);
     }
 
 
