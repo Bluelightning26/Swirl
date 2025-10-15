@@ -399,14 +399,14 @@ footer a {
 }
 
 
-.resource-grid {
+.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 2rem;
     margin: 2rem 1rem;
 }
 
-.resource-item {
+.item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -416,7 +416,7 @@ footer a {
     font-size: 1.5rem;
 }
 
-.resource-item img {
+.item img {
     width: 100%;
     max-width: 220px;
     border-radius: 10px;
