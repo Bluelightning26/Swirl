@@ -25,7 +25,7 @@
     font-size: 1.2em;
     text-align: center;
     display: grid;
-    row-gap: 1em;
+    row-gap: 0.4em;
     column-gap: 2em;
     grid-template-areas:
     "req-a req-b req-c"
@@ -34,10 +34,10 @@
 
     "req-d req-e req-f"
     "img-d img-e img-f"
+    ". req-h."
+    ". img-h .";
+    padding: 2rem;
 
-    "req-g req-h req-i"
-    "img-g img-h img-i";
-    padding: 1rem;
   }
   .req-grid img {
     height: 100px;
@@ -47,7 +47,7 @@
 
   .space {
     grid-area: space;
-    padding: 1rem;
+    padding: 10rem;
   }
 </style>
 
@@ -122,45 +122,49 @@
 <br>
 
   <div class="req-grid">
+  <div class="item">
+      <div class="req-a">Be original<br>(No copy-pasting)</div>
+      <div class="img-a"><img src="https://stickers.dld.hackclub.app/static/stickers/Rummage.png" alt="rummaging from dld sticker site!"></div>
+  </div>
 
-    <div class="req-a">Be original<br>(No copy-pasting)</div>
+  <div class="item">
     <div class="req-b">Have 3 HTML pages with content</div>
-    <div class="req-c">Have a Favicon & Title</div>
-
-    <div class="img-a"><img src="https://stickers.dld.hackclub.app/static/stickers/Rummage.png" alt="rummaging from dld sticker site!"></div>
     <div class="img-b"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png" alt="html logo""></div>
+  </div>
+
+  <div class="item">
+    <div class="req-c">Have a Favicon & Title</div>
     <div class="img-c"><img src="/assets/png/sprinkles.png" alt="favicon" style="border-radius: 20px"></div>
+  </div>
 
-    <div class="space"></div>
-    <div class="space"></div>
-    <div class="space"></div>
 
+
+  <div class="item">
     <div class="req-d">Have something fun & unique!</div>
+    <div class="img-d" style="margin-bottom: -100px"><img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/a4cdda8aaa878c3d4f4cfce1e641843a93a7b940_img_0769.png" alt="yessa's amazing logo!" style="border-radius: 20px; height: 50%; "></div>
+  </div>
+
+  <div class="item">
     <div class="req-e">Be static<br>(Only contains HTML + CSS)<br>JavaScript is optional</div>
-    <div class="req-f">Have text, color, and an image</div>
-
-    <div class="img-d"><img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/a4cdda8aaa878c3d4f4cfce1e641843a93a7b940_img_0769.png" alt="yessa's amazing logo!" style="border-radius: 20px; height: 50%; margin-top: -30px"></div>
     <div class="img-e"><img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/6cd2cb8be1757872cc6e070ee4929e0ddbd677ec_colored-logo.png" alt="static website gh pages loo"></div>
+  </div>
+
+  <div class="item">
+    <div class="req-f">Have text, color, and an image</div>
     <div class="img-f"><img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/8dff1160390935198b7558c4088bb57a7d6cc5c7_Cascade.png" alt="artistic orph"></div>
+  </div>
 
-    <div class="space"></div>
-    <div class="space"></div>
-    <div class="space"></div>
-
-    <div class="req-g"></div>
-    <div class="req-h">Have at least one scoop...</div>
-    <div class="req-i"></div>
-    <div class="img-g"></div>
-    <div class="img-h"><img src="assets/svg/swirl-2.svg" alt="Sprinkles"></div>
-    <div class="img-i"></div>
+    <br>
+    <div class="item centered">
+      <div class="req-h">Have at least one scoop...</div>
+      <div class="img-h"><img src="assets/svg/swirl-2.svg" alt="Sprinkles"></div>
+    </div>
 
 
-</div>
 
-<br>
-<br><br>
-  <br><br>
-  <br>
+
+  </div>
+
 
 <p> Other ground rules around submissions:</p>
 <div class="list">
@@ -172,8 +176,12 @@
   <li>If your website was submitted for Boba Drops, it has been expanded on since.</li>
   <li>Frameworks and other languages are not permitted.</li>
 </div>
+</div>
+<br><br>
 
-<br>
+
+<div class="main-content">
+
 
 <center>
 <h2>Scoops!</h2>
@@ -182,11 +190,42 @@
     Prizes increase with more scoops for a maximum of 3!<br>
     Every submission needs at least one scoop!<br>
     Features that are required do not count for a scoop<br>
-
   </p>
 <br><br>
-</center>
+  </center>
+  <div class="grid">
+    <div class="item">
+      <h2>1 Scoop</h2>
+      <img src="/assets/svg/swirl-1.svg" alt="1 scoop" style="background: none; height: 15rem">
+      <h2 style="justify-content: center">$5</h2>
+      <br><p style="justify-content: center">food grant</p>
+
+       </div>
+
+    <div class="item">
+      <h2>2 Scoops</h2>
+      <img src="/assets/svg/swirl-2.svg" alt="2 scoops" style="background: none; height: 15rem">
+      <h2 style="justify-content: center">$7</h2>
+      <br><p style="justify-content: center">food grant</p>
+
+
+    </div>
+
+    <div class="item">
+      <h2>3+ Scoops</h2>
+      <img src="/assets/svg/swirl-3.svg" alt="3+ scoops" style="background: none; height: 15rem;">
+      <h2 style="justify-content: center">$9</h2>
+      <br><p style="justify-content: center">food grant</p>
+
+    </div>
+  </div>
+
+
+
+
+
 <h3>Here's a list for inspiration:</h3>
+  <p>A group of three features make up one scoop!</p>
 <br>
 <div class="list">
   <img src="assets/svg/scoops.svg" alt="Scoops" class="swirl-req-img" style="width: 450px;">
